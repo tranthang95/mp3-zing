@@ -1,14 +1,19 @@
 import React from 'react';
-import Search from './components/search';
+
 import SideBar from './components/side-bar';
+import Header from './components/header';
+import MainContent from './components/main-content';
+import PlayerControl from './components/player-control';
 
 
 
 const  App: React.FC = () =>  {
   return (
-    <div>
+    <div className="container">
+      <Header />
       <SideBar />
-      <Search />
+      <MainContent />
+      <PlayerControl />
     </div>
   );
 }
