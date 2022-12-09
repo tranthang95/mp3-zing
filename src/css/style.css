@@ -1,21 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400&display=swap");
-.logo {
-  margin-top: 10rem; }
+.header {
+  grid-column: full-start / full-end;
+  grid-row: 1 / 2;
+  background-color: #170F23; }
+  .header__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: fixed;
+    width: 100vw;
+    height: fit-content;
+    top: 0; }
+
+.page {
+  display: flex;
+  position: relative; }
+
+.container {
+  display: grid;
+  background-color: #170F23;
+  grid-template-rows: 5rem 80vh 10vh 1fr;
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  color: white; }
+
+.sidebar {
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / 3;
+  background-color: #312644; }
+  .sidebar__container {
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+    margin: 1rem; }
+
+.img__logo-zing {
+  width: 5rem;
+  height: 2.6rem; }
+
+.playercontrol {
+  position: fixed;
+  color: white;
+  bottom: 0;
+  width: 100vw;
+  height: 10vh;
+  border-top: 1px solid #2B2533;
+  background-color: #180f24;
+  text-align: center;
+  justify-self: center; }
+
+.maintcontent {
+  grid-row: 2/ 3;
+  grid-column: col-start 1 / col-end 8;
+  background-color: #170F23; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
 html {
-  font-family: sans-serif; }
-
-body {
-  margin: 0rem;
   font-size: 62.5%; }
 
-.search {
-  border: 1rem;
-  display: grid;
-  grid-gap: 1rem; }
-
-.side-bar {
-  margin: 1rem; }
-
-.logo {
-  padding: 1rem; }
+body {
+  font-family: sans-serif; }
