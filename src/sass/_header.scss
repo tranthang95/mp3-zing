@@ -1,2 +1,12 @@
 
+.header {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
 
+  background-color: #170F23;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}

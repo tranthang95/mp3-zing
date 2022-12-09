@@ -4,9 +4,9 @@ import logo from '../../img/Zing_logo.png'
 
 const SideBar:React.FC = () => {
   return (
-    <div className="side-bar">
-      <img className='logo' src={logo} alt="logo zing" />
-      
+    <div className="sidebar">
+      <img className='logo-zing' src={logo} alt="logo zing" />
+      Side bar
     </div>
   )
 }

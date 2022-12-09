@@ -1,35 +1,24 @@
 @import "./header";
+@import "./base";
+@import "./sidebar";
+@import "./playercontrol";
+@import "./maintcontent";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400&display=swap'); 
 
-
-.logo {
-  //  width: 100%; 
-   margin-top: 10rem; 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
+  font-size: 62.5%;
+}
+
+body {
   font-family: sans-serif;
 
 }
 
-body {
-  margin: 0rem;
-  font-size: 62.5%;
-
-}
-
-.search {
-  border: 1rem;
-  display: grid;
-  grid-gap: 1rem;
-}
-
-
-
-.side-bar {
-  margin: 1rem;
-}
-
-.logo {
-  padding: 1rem;
-}
