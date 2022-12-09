@@ -9,11 +9,15 @@ import PlayerControl from './components/player-control';
 
 const  App: React.FC = () =>  {
   return (
-    <div className="container">
-      <Header />
-      <SideBar />
-      <MainContent />
-      <PlayerControl />
+    <div className='page'>
+      <div className="container">
+        <Header />
+        <SideBar />
+        <MainContent />
+      </div>
+      <div  className='playercontrol'>
+        <PlayerControl />
+      </div>
     </div>
   );
 }
