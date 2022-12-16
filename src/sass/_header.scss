@@ -1,15 +1,34 @@
 
 .header {
-  grid-column: full-start / full-end;
-  grid-row: 1 / 2;
+  // grid-column: center-start / center-end;
+  // grid-row: 1 / 2;
 
-  background-color: #170F23;
-  &__container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    position: fixed;
-    width: 100vw;
-    height: fit-content;
-    top: 0;
-  }
+  background-color: #160F23;
+  // min-width: 66rem;
+  height: 7rem;
+  top: 0;
+  right: 0rem;
+  left: 29rem;
+  margin-right: 5rem;
+  position: fixed;
+  z-index: 99;
+  opacity: 0.8;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
 }
+
+
+
+
+
+// .visually-hidden {
+//    clip: rect(0 0 0 0);
+//   clip-path: inset(50%);
+//   height: 1px;
+//    overflow: hidden;
+//    position: absolute;
+//    white-space: nowrap;
+//   width: 1px;
+// }
