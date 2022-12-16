@@ -1,15 +1,39 @@
+//Color
+$color-primary: #170F23;
+$color-primary-light: #2E2739;
+
+$color-secondary: #221B2E;
+
+$color-grey-light-1: #f8f9fa;
+$color-grey-light-2: #f1f3f5;
+
+$color-grey-dark-1: #343a40;
+$color-grey-dark-2: #212529;
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+//Responsive breakpoint
+$bp-largest: 75em;  // 75 x 16 = 1200px
+$bp-large: 62.5em;  //           1000px
+$bp-medium: 50em;  //            800px
+$bp-small: 37em;  //             600px
+
 .page {
-  display: flex;
+  // display: flex;
   position: relative;
 }
 
 .container {
   // margin: 1rem;
-  display: grid;
+  position: relative;
+  display: flex;
   background-color: #170F23;
   
-  grid-template-rows: 5rem 80vh 10vh 1fr;
-  // grid-template-columns: [sidebar-start] minxax(min-content, 8rem) [sidebar-end ful-start] 1fr [center-start] repeat(8, [col-start] minxax(min-content, 14rem) [col-end]) [center-end] 1fr [ful-end];
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  // grid-template-rows: 20vh 80vh 10vh 1fr;
+  // // grid-template-columns: [sidebar-start] minxax(min-content, 8rem) [sidebar-end ful-start] 1fr [center-start] repeat(8, [col-start] minxax(min-content, 14rem) [col-end]) [center-end] 1fr [ful-end];
+  // grid-template-columns: [sidebar-start] minmax(15vw, 24rem) [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   color: white;
+
 }

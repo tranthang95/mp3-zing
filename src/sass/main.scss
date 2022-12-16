@@ -3,6 +3,7 @@
 @import "./sidebar";
 @import "./playercontrol";
 @import "./maintcontent";
+@import "./search";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400&display=swap'); 
 
 *,
@@ -10,7 +11,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {

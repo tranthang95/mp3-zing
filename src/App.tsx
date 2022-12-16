@@ -11,8 +11,8 @@ const  App: React.FC = () =>  {
   return (
     <div className='page'>
       <div className="container">
-        <Header />
         <SideBar />
+        <Header />
         <MainContent />
       </div>
       <div  className='playercontrol'>
