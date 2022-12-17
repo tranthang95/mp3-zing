@@ -1,15 +1,17 @@
 .sidebar {
   // grid-column: sidebar-start / sidebar-end;
   // grid-row:  1 /-1;
-  width: 24rem;
+  
   background-color: #312644;
 
-  
+  position: sticky;
+  top: 0;
+  height: 100vh;
+
   display: flex;
   flex-direction: column;
   line-height: 3rem;
 
- 
 
   justify-content: flex-start;
 

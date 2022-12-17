@@ -12,8 +12,10 @@ const  App: React.FC = () =>  {
     <div className='page'>
       <div className="container">
         <SideBar />
-        <Header />
-        <MainContent />
+        <div className='container__main'>
+          <Header />
+          <MainContent />
+        </div>
       </div>
       <div  className='playercontrol'>
         <PlayerControl />
