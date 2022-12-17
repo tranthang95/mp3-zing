@@ -10,14 +10,6 @@
   }
 }
 
-.img{
-  
-  &__logo-zing {
-    width: 5rem;
-    height: 2.6rem;
-  }
-
-}
 
 .btn {
   background-color: #31234600;
@@ -32,7 +24,6 @@
 
 }
 
-
 .search {
   
   flex-grow: 1;
@@ -41,16 +32,8 @@
   align-items: center;
 
   
-  &__container{
-    background-color: #2E2739;
-    height: 4rem;
-    width: 45rem;
-    border-radius: 20px;
-    
-  }
-  
   &__input {
-    padding-left: 1rem;
+    padding-left: 4rem;
     height: 4rem;
     width: 35vw;
     margin: 1rem;
@@ -61,21 +44,21 @@
     color: white;
     font-size: 1.6rem;
     // z-index: 100;
-    transform: translate(3rem, -6rem);
+    transform: translate(-6rem);
+ 
     
     &:focus {
       background-color: #34224F;
       color: white;
       outline: 0;
-      // padding-left: 5rem ;
-      // transform: translate(-1rem, -6rem);
-
     }
-
-
     &::placeholder {
       color: #f8f9fa
     }
+  }
+
+  &__button {
+    z-index: 100;
   }
 
  

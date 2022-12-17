@@ -2,11 +2,8 @@
 .header {
   background-color: #160F23;
   height: 7rem;
+  position: sticky;
   top: 0;
-  right: 0rem;
-  left: 29rem;
-  margin-right: 5rem;
-  position: fixed;
   z-index: 99;
   opacity: 0.8;
   display: flex;
@@ -17,14 +14,20 @@
   position: relative; }
 
 .container {
-  position: relative;
   display: flex;
   background-color: #170F23;
+  position: relative;
   color: white; }
 
+.container__main {
+  width: 100vw;
+  padding: 0 5rem 0 5rem; }
+
 .sidebar {
-  width: 24rem;
   background-color: #312644;
+  position: sticky;
+  top: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   line-height: 3rem;
@@ -69,10 +72,8 @@
   justify-self: center; }
 
 .maintcontent {
-  flex-grow: 1;
   background-color: #170F23;
-  height: 70rem;
-  margin: 8rem 5rem 0 5rem; }
+  min-height: 100vh; }
 
 .login {
   align-self: center; }
@@ -82,10 +83,6 @@
     background: #dddddd;
     border-radius: 50%;
     margin: 1rem; }
-
-.img__logo-zing {
-  width: 5rem;
-  height: 2.6rem; }
 
 .btn {
   background-color: #31234600;
@@ -103,13 +100,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center; }
-  .search__container {
-    background-color: #2E2739;
-    height: 4rem;
-    width: 45rem;
-    border-radius: 20px; }
   .search__input {
-    padding-left: 1rem;
+    padding-left: 4rem;
     height: 4rem;
     width: 35vw;
     margin: 1rem;
@@ -118,13 +110,15 @@
     background-color: #2E2739;
     color: white;
     font-size: 1.6rem;
-    transform: translate(3rem, -6rem); }
+    transform: translate(-6rem); }
     .search__input:focus {
       background-color: #34224F;
       color: white;
       outline: 0; }
     .search__input::placeholder {
       color: #f8f9fa; }
+  .search__button {
+    z-index: 100; }
 
 *,
 *::after,

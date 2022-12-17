@@ -27,13 +27,20 @@ $bp-small: 37em;  //             600px
 
 .container {
   // margin: 1rem;
-  position: relative;
+
   display: flex;
   background-color: #170F23;
+  position: relative;
   
   // grid-template-rows: 20vh 80vh 10vh 1fr;
   // // grid-template-columns: [sidebar-start] minxax(min-content, 8rem) [sidebar-end ful-start] 1fr [center-start] repeat(8, [col-start] minxax(min-content, 14rem) [col-end]) [center-end] 1fr [ful-end];
   // grid-template-columns: [sidebar-start] minmax(15vw, 24rem) [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   color: white;
+
+}
+
+.container__main{
+  width: 100vw;
+  padding: 0 5rem 0 5rem;
 
 }
