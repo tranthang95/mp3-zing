@@ -1,9 +1,83 @@
-
 .maintcontent {
   // grid-row: 2/ 3;
   // grid-column: col-start 1 / col-end 8;
-
   background-color: $color-primary;
   min-height: 100vh;
+
+}
+
+.slider {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
   
+
+  &__button {
+    position: absolute;
+    background-color: hsla(0,0%,100%,.15);
+    box-shadow: 0 2px 4px 0 rgba(214, 98, 98, 0.15);
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.5;
+     
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__button-preview {
+    left: 0;
+    top: 50%;
+    transform: translate(0, -20%);
+  }
+
+  &__button-next {
+    right: 0;
+    top: 50%;
+    transform: translate(0, -20%);
+  }
+
+  &__slides {
+    margin-top: 4rem;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    position: relative;
+   
+  }
+  
+  &__slides-slide {
+    flex-shrink: 0; // item k co lai
+    width: 33.3%;
+    
+    transform-origin: center center;
+    padding: 1rem;
+    scroll-snap-align: center;
+    
+    // transform: translate(-100%);  //js taoj slide chuyen dong. js 13.
+  }
+}
+.slide-img{
+  width: 100%;
+  border-radius: 1rem;
+}
+
+a {
+  position: absolute;
+  color: aliceblue;
+  top: 48%;
+  width: 35px;
+  height: 35px;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  padding: 3px;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 5%;
+    z-index: 1;
 }
