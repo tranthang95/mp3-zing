@@ -1,26 +1,25 @@
 import React from 'react';
-
-import SideBar from './components/side-bar';
-import Header from './components/header';
-import MainContent from './components/main-content';
-import PlayerControl from './components/player-control';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import MyMusic from './pages/MyMusic';
 
 
 
-const  App: React.FC = () =>  {
+
+
+const  App: React.FunctionComponent = () =>  {
   return (
-    <div className='page'>
-      <div className="container">
-        <SideBar />
-        <div className='container__main'>
-          <Header />
-          <MainContent />
-        </div>
-      </div>
-      <div  className='playercontrol'>
-        <PlayerControl />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        
+        <Route path='/' element={<Home />} />
+        <Route path='mymusic' element={<MyMusic />} />
+        <Route path='*' element={<Home />} />
+
+      </Routes>
+      
+
+    </BrowserRouter>
   );
 }
 

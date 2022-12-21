@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+
 import img1 from "../../img/anh1.png";
 import img2 from "../../img/anh2.png";
 import img3 from "../../img/anh3.png";
@@ -58,9 +60,9 @@ const MainContent:React.FC = () => {
 
         </div>
       </div>
-    </div>
-        
-        
+
+
+    </div>  
   )
 }
 
