@@ -1,24 +1,32 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import MyMusic from './pages/MyMusic';
-
-
-
+import Home from './components/home-page';
+import MyMusic from './components/my-music';
+import SideBar from './components/side-bar';
+import Header from './components/header';
+import PlayerControl from './components/player-control';
 
 
 const  App: React.FunctionComponent = () =>  {
   return (
     <BrowserRouter>
-      <Routes>
-        
-        <Route path='/' element={<Home />} />
-        <Route path='mymusic' element={<MyMusic />} />
-        <Route path='*' element={<Home />} />
-
-      </Routes>
-      
-
+      <div className='page'>
+        <div className="container">
+          <SideBar />
+          <div className='container__main'>
+            <Header />
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='mymusic' element={<MyMusic />} />
+                <Route path='*' element={<Home />} />
+              </Routes>
+          </div>
+        </div>
+        <div  className='playercontrol'>
+          <PlayerControl />
+        </div>
+      </div>
+    
     </BrowserRouter>
   );
 }
