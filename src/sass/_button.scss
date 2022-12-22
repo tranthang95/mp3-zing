@@ -1,0 +1,52 @@
+.btn {
+  background-color: #31234600;
+  stroke: #9D9AA2;
+  border: none;
+  height: 3rem;
+  width: 3rem;
+  margin: 1rem;
+  stroke-width: 0;
+  fill: #9D9AA2;
+  cursor: pointer;
+}
+
+.button-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 100;
+  opacity: 0;
+  
+  &__close{
+    fill: white;
+    padding: 0.7rem;
+    &:hover {
+      background-color: hsla(0,0%,100%,0.3);
+      border-radius: 50%;
+    }
+  }
+
+  &__play{
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    fill: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &__dot {
+    fill: white;
+    &:hover {
+      background-color: hsla(0,0%,100%,0.3);
+      border-radius: 50%;
+    }
+  }
+}
+

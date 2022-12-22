@@ -1,6 +1,6 @@
 import React from "react";
-import Search from "../search/searchbar";
-import Login from "../login/LoginAvata";
+import Search from "./components/search-bar";
+import Login from "./components/login-avata";
 
 const Header:React.FC = () => {
   return (

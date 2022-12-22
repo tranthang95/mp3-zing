@@ -132,17 +132,6 @@ a {
     border-radius: 50%;
     margin: 1rem; }
 
-.btn {
-  background-color: #31234600;
-  stroke: #9D9AA2;
-  border: none;
-  height: 3rem;
-  width: 3rem;
-  margin: 1rem;
-  stroke-width: 0;
-  fill: #9D9AA2;
-  cursor: pointer; }
-
 .search {
   flex-grow: 1;
   display: flex;
@@ -232,7 +221,8 @@ a {
       color: #8427d6; }
     .library__playlist-btn-all > span {
       text-transform: uppercase;
-      color: inherit; }
+      color: inherit;
+      font-size: 1.2rem; }
 
 .library__carousel {
   display: flex; }
@@ -242,15 +232,23 @@ a {
   flex-direction: column;
   padding: 0 2rem 0 2rem;
   gap: 1rem; }
-  .item__card {
+  .item__container {
+    position: relative;
     overflow: hidden;
     border-radius: 1rem; }
+    .item__container:hover {
+      opacity: 1; }
+    .item__container:hover .button-option {
+      opacity: 1;
+      transition: all 0.6s; }
+    .item__container:hover .item__card {
+      transform: scale(1.1);
+      opacity: 0.6; }
+  .item__card {
+    transition: all 0.6s; }
     .item__card-img {
       width: 15vw;
-      max-width: 18rem;
-      transition: all 0.6s; }
-      .item__card-img:hover {
-        transform: scale(1.1); }
+      max-width: 18rem; }
   .item__name {
     font-size: 1.4rem;
     color: white; }
@@ -259,7 +257,53 @@ a {
     color: #9D9AA2; }
 
 .listmusic {
-  background-color: antiquewhite; }
+  background-color: antiquewhite;
+  color: blue; }
+  .listmusic__nav {
+    font-size: 2rem; }
+  .listmusic__main {
+    font-size: 2rem; }
+
+.btn {
+  background-color: #31234600;
+  stroke: #9D9AA2;
+  border: none;
+  height: 3rem;
+  width: 3rem;
+  margin: 1rem;
+  stroke-width: 0;
+  fill: #9D9AA2;
+  cursor: pointer; }
+
+.button-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 100;
+  opacity: 0; }
+  .button-option__close {
+    fill: white;
+    padding: 0.7rem; }
+    .button-option__close:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 50%; }
+  .button-option__play {
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    fill: white;
+    border: 1px solid white;
+    border-radius: 50%; }
+    .button-option__play:hover {
+      opacity: 0.9; }
+  .button-option__dot {
+    fill: white; }
+    .button-option__dot:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 50%; }
 
 *,
 *::after,

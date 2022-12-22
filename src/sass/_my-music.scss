@@ -33,7 +33,7 @@
       background-color: #9B4DE0;
       fill: white;
 
-      &:hover{
+      &:hover {
         background-color: #8427d6;
       }
 
@@ -88,6 +88,7 @@
       &>span{
         text-transform: uppercase;
         color:inherit ;
+        font-size: 1.2rem;
       }
 
     }
@@ -98,24 +99,41 @@
   }
 }
 
+
 .item {
   display: flex;
   flex-direction: column;
   padding: 0 2rem 0 2rem;
   gap:1rem;
-  
-  &__card{
+
+  &__container{
+    position: relative;
     overflow: hidden;  //phong anh va khong bi tran
     border-radius: 1rem;
+    &:hover {
+      opacity: 1;
 
+    }
+    &:hover .button-option {
+      opacity: 1;
+      transition: all 0.6s;
+  
+    }
+    
+    &:hover .item__card{
+      transform: scale(1.1);
+      opacity: 0.6;
+    }
+    
+  }
+  
+  &__card{
+    transition: all 0.6s;
+
+   
     &-img{
       width: 15vw;
       max-width: 18rem;
-      transition: all 0.6s;
-
-      &:hover{
-        transform: scale(1.1);
-      }
     }
     
   }
@@ -136,17 +154,14 @@
 
 .listmusic {
   background-color: antiquewhite;
-
+  color: blue;
   &__nav {
-
+    font-size: 2rem;
   }
-
+  
   &__main {
-
+    font-size: 2rem;
+    
   }
-
-}
-
-.af {
 
 }
