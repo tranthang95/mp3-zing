@@ -9,6 +9,11 @@ $color-grey-light-2: #f1f3f5;
 
 $color-grey-dark-1: #343a40;
 $color-grey-dark-2: #212529;
+$color-text-light-1: white;
+$color-text-light-2: #9D9AA2;
+$color-line: #2F2739;
+$color-button-active: #9B4DE0;
+$color-active: #3A3344;
 
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
@@ -41,6 +46,6 @@ $bp-small: 37em;  //             600px
 
 .container__main{
   width: 100vw;
-  padding: 0 5rem 0 5rem;
+  padding: 0 6rem 0 6rem;
 
 }

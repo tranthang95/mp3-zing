@@ -6,6 +6,11 @@ import SideBar from './components/side-bar';
 import Header from './components/header';
 import PlayerControl from './components/player-control';
 
+import Song from './components/my-music/components/pages/song-page';
+import MV from './components/my-music/components/pages/song-page'
+import PodCast from './components/my-music/components/pages/podcast-page';
+import Album from './components/my-music/components/pages/album-page';
+
 
 const  App: React.FunctionComponent = () =>  {
   return (
@@ -17,7 +22,12 @@ const  App: React.FunctionComponent = () =>  {
             <Header />
               <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='mymusic' element={<MyMusic />} />
+                <Route path='mymusic' element={<MyMusic />} >
+                  <Route path='song' element={<Song />} />
+                  <Route path='mv' element={<MV />} />
+                  <Route path='podcast' element={<PodCast />} />
+                  <Route path='album' element={<Album />} />
+                </Route>
                 <Route path='*' element={<Home />} />
               </Routes>
           </div>

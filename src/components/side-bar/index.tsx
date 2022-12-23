@@ -14,9 +14,9 @@ const SideBar:React.FC = () => {
       <div >
         <Link to='/mymusic' >
           <div className='sidebar__btn'>
-              <IconExplore />
-              <span>Cá Nhân</span>
-            </div>
+            <IconExplore />
+            <span>Cá Nhân</span>
+          </div>
         </Link> 
 
         <Link to='/'>

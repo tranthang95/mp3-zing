@@ -1,0 +1,100 @@
+.song {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  &-header{
+    display: flex;
+
+    padding: 1rem;
+    &__text{
+      color: $color-text-light-2;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+    &__text-1{
+      margin-left: 3.5rem;
+    }
+  }
+
+  &-main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__media{
+    display: flex;
+
+    padding: 1rem;
+    border-top: 1px solid $color-line;
+    align-items: center;
+    &:hover{
+      background-color: $color-active;
+    }
+    &-left{
+      display: flex;
+      gap: 1rem;
+      width: 50%;
+    }
+    &-mid{
+    flex-grow: 1;
+ 
+    }
+    &-right{
+      display: flex;
+      gap: 2rem;
+    }
+  }
+
+  &__logo{
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: $color-text-light-2;
+    align-self: center;
+    margin: .6rem;
+  }
+
+  &__img{
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__infor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+
+    &-name{
+      color: $color-text-light-1;
+      font-weight: 400;
+      font-size: 1.6rem;
+    }
+
+    &-author{
+      color: $color-text-light-2;
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__album {
+    color: $color-text-light-2;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+  &__btn-heart{
+    width: 1.6rem;
+    height: 1.6rem;
+    stroke-width: 0;
+  
+    fill: $color-button-active;
+    background-color: inherit;
+    border: none;
+  }
+
+  &__duration{
+    color: $color-text-light-2;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+}
