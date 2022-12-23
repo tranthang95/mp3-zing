@@ -1,15 +1,11 @@
 .main-music {
-
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-bottom: 10vh;
+
 }
-
 .library {
-
-
   &__header {
     display: flex;
     justify-content: flex-start;
@@ -17,13 +13,11 @@
     align-items: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
-
     &>h1 {
       color: white;
       font-weight: 700;
       font-size: 4rem;
     }
-
     &-btn-play{
       width: 4rem;
       height: 4rem;
@@ -32,34 +26,27 @@
       border: none;
       background-color: #9B4DE0;
       fill: white;
-
       &:hover {
         background-color: #8427d6;
       }
-
     }
   }
-
   &__playlist {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3rem;
-
     &>div {
       display: flex;
       align-items: center;
       gap: 1rem;
     }
-
     &>div>h2{
       color: white;
       text-transform: uppercase;
       font-weight: 600;
       font-size: 2rem;
-
     }
-
     &-btn-plus{
       width: 2.6rem;
       height: 2.6rem;
@@ -68,9 +55,7 @@
       border-radius: 50%;
       fill: white;
       cursor: pointer;
-      
     }
-
     &-btn-all {
       display: flex;
       align-items: center;
@@ -79,89 +64,68 @@
       fill: #9D9AA2;
       cursor: pointer;
       color:#9D9AA2;
-
       &:hover{
         fill: #8427d6;
         color: #8427d6 ;
-      }
-      
+      }     
       &>span{
         text-transform: uppercase;
         color:inherit ;
         font-size: 1.2rem;
       }
-
     }
   }
-
   &__carousel {
     display: flex;
   }
 }
-
-
 .item {
   display: flex;
   flex-direction: column;
-  padding: 0 2rem 0 2rem;
+  padding: 0 3rem 0 0rem;
   gap:1rem;
-
   &__container{
     position: relative;
     overflow: hidden;  //phong anh va khong bi tran
     border-radius: 1rem;
     &:hover {
       opacity: 1;
-
     }
     &:hover .button-option {
       opacity: 1;
       transition: all 0.6s;
-  
     }
     
     &:hover .item__card{
       transform: scale(1.1);
       opacity: 0.6;
     }
-    
   }
-  
   &__card{
     transition: all 0.6s;
-
-   
     &-img{
       width: 15vw;
       max-width: 18rem;
-    }
-    
+    }  
   }
-
   &__name{
     font-size: 1.4rem;
     color: white;
   }
-
   &__author{
     font-size: 1.4rem;
     color:#9D9AA2;
   }
 }
-
-
-
-
 .listmusic {
-  background-color: antiquewhite;
-  color: blue;
+  margin-top: 5rem;
+  position: relative;
+  min-width: 20%;
   &__nav {
     font-size: 2rem;
+    display: flex;
+    gap: 5rem;
+    border-bottom: 2px solid $color-line ;
+    margin-bottom: 5rem;
   }
-  
-  &__main {
-    font-size: 2rem;
-    
-  }
-
 }

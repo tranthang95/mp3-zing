@@ -50,3 +50,14 @@
   }
 }
 
+
+.listmusic__nav-button {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 1.6rem;
+  
+  &:hover {
+    border-bottom: 0.3rem solid #9B4DE0 ;
+  }
+}
