@@ -1,16 +1,121 @@
 .playercontrol {
-  // grid-column: sidebar-start / full-end;
-  // grid-row: 3/4;
-  // border-radius: 25px;
   position: sticky;
   color: white;
   bottom: 0;
-  width: 100vw;
-  height: 7rem;
+  width: 100%;
+  padding: 0 1rem 0 1rem;
+  height: 9rem;
   border-top: 1px solid #2B2533;
   background-color: #180f24;
-  text-align: center;
-  justify-self: center;
   
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  
+  &-media{
+    min-width: 30%;
+    flex-shrink: 0;
+  }
+  &-center{
+    width: 40vw;
+    flex-shrink: 0;
+    flex-grow: 1;
+    
+  }
+  &-right{
+
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+  }
+}
+
+.media{
+  display: flex;
+  gap: 1.5rem;
+  &__left{
+
+    &-img{
+      width: 6rem;
+      height: 6rem;
+
+    }
+  }
+  &__infor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+    flex-basis: auto;
+    // flex-grow: 1;
+    flex-shrink: 0;
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    flex-basis: auto;
+    flex-shrink: 0;
+  }
+  &__btn-dot{
+    background-color: inherit;
+    width: 3.6rem;
+    height: 3.6rem;
+    border: none;
+    fill: white;
+    &:hover{  
+      background-color: rgba(255, 255, 255, 0.142);
+      border-radius: 50%;
+    }
+  }
+}
+
+.control {
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+  }
+  &__button{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  &__time{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    &>span{
+      font-weight: 400;
+    }
+  }
+}
+
+#seek{
+  width: 80%;
+}
+
+.control-right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+
+
+  &>input{
+    min-width: 3.6rem;
+  }
+  &>span{
+    height: 3.3rem;
+    width: 0.1rem;
+    background-color: #2B2533;
+    margin: 0 2rem;
+  }
 }
 

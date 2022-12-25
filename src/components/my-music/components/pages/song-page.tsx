@@ -2,6 +2,7 @@ import React from "react";
 
 import IconMusicNotes from "../../../icons/icon-music-note";
 import IconHeart from "../../../icons/icon-heart"
+import IconPlay from "../../../icons/icon-play";
 
 const Song: React.FC = () => {
 
@@ -25,7 +26,10 @@ const Song: React.FC = () => {
             <div className="song__logo"> 
               <IconMusicNotes />
             </div>
-            <div className="song__img">
+            <div className="song__avata">
+              <div className="song__btn-play">
+                <IconPlay />
+              </div>
               <img className="song__img" src="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/cover/3/2/a/3/32a35f4d26ee56366397c09953f6c269.jpg" alt="" />
             </div>
             <div className="song__infor">
@@ -51,7 +55,10 @@ const Song: React.FC = () => {
             <div className="song__logo"> 
               <IconMusicNotes />
             </div>
-            <div className="song__img">
+            <div className="song__avata">
+              <div className="song__btn-play">
+                <IconPlay />
+              </div>
               <img className="song__img" src="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/cover/3/2/a/3/32a35f4d26ee56366397c09953f6c269.jpg" alt="" />
             </div>
             <div className="song__infor">

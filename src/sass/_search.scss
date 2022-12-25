@@ -1,12 +1,13 @@
 .login {
-  align-self: center;
+  &__img{
+    border: none;
+    background-color: inherit;
 
+  }
   &__img-avata{
-    width: 3rem;
-    height: 3rem;
-    background: #dddddd;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%; 
-    margin: 1rem;
   }
 }
 
@@ -37,6 +38,7 @@
       background-color: #34224F;
       color: white;
       outline: 0;
+
     }
     &::placeholder {
       color: #f8f9fa

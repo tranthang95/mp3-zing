@@ -27,9 +27,18 @@
     padding: 1rem;
     border-top: 1px solid $color-line;
     align-items: center;
-    &:hover{
+    &:hover {
       background-color: $color-active;
     }
+    &:hover .song__btn-play{
+      opacity: 1;
+      transition: all 0.3s;
+    }
+    &:hover .song__img{
+      opacity: 0.5;
+      transition: all 0.3s;
+    }
+
     &-left{
       display: flex;
       gap: 1rem;
@@ -41,6 +50,7 @@
     }
     &-right{
       display: flex;
+      align-items: center;
       gap: 2rem;
     }
   }
@@ -51,11 +61,29 @@
     fill: $color-text-light-2;
     align-self: center;
     margin: .6rem;
+    cursor: pointer;
+  }
+  &__avata{
+    position: relative;
+    cursor: pointer;
   }
 
   &__img{
     width: 4rem;
     height: 4rem;
+    
+  }
+
+  &__btn-play {
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50% , -50%);
+    opacity: 0;
   }
 
   &__infor{
@@ -63,6 +91,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 0.3rem;
+    max-width: max-content;
+    flex-shrink: 0;
 
     &-name{
       color: $color-text-light-1;
@@ -83,14 +113,22 @@
     font-size: 1.4rem;
   }
   &__btn-heart{
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 3.6rem;
+    height: 3.6rem;
     stroke-width: 0;
+    cursor: pointer;
+    padding: 1rem;
   
     fill: $color-button-active;
     background-color: inherit;
     border: none;
+    &:hover{  
+      background-color: rgba(255, 255, 255, 0.142);
+      border-radius: 50%;
+    }
   }
+
+
 
   &__duration{
     color: $color-text-light-2;
@@ -98,3 +136,4 @@
     font-size: 1.4rem;
   }
 }
+
