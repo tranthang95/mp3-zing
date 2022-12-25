@@ -9,7 +9,7 @@ const ListMusic: React.FC = () => {
     <div className="listmusic">
       <nav className="listmusic__nav">
 
-        <Link className='test' to='/mymusic/song'>
+        <Link to='/mymusic/song'>
           <div className='listmusic__nav-button'>
             Bài Hát
           </div>

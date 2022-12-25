@@ -57,7 +57,132 @@
   color: white;
   padding-bottom: 1.6rem;
   
-  &:hover {
-    border-bottom: 0.3rem solid #9B4DE0 ;
+  // &:hover {
+  //   border-bottom: 0.3rem solid #9B4DE0 ;
+  // }
+}
+
+.button {
+  
+  &-jump-next{
+    min-width: 3.6rem;
+    height: 3.6rem;
+    stroke-width: 0;
+    cursor: pointer;
+    padding: 0.5rem;
+  
+    fill: white;
+    background-color: inherit;
+    border: none;
+    &:hover{  
+      background-color: rgba(255, 255, 255, 0.142);
+      border-radius: 50%;
+    }
+  }
+  &-jump-start{
+    min-width: 3.6rem;
+    height: 3.6rem;
+    stroke-width: 0;
+    cursor: pointer;
+    padding: 0.5rem;
+  
+    fill: white;
+    background-color: inherit;
+    border: none;
+    &:hover{  
+      background-color: rgba(255, 255, 255, 0.142);
+      border-radius: 50%;
+    }
+  }
+
+  &-pause{
+    min-width: 3.6rem;
+    height: 4rem;
+    stroke-width: 0;
+    cursor: pointer;
+  
+    fill: white;
+    background-color: inherit;
+    border: none;
+    &:hover{  
+      fill: $color-button-active;
+    }
+  }
+  &-loop{
+    min-width: 3.6rem;;
+    height: 3.6rem;
+    stroke-width: 0;
+    cursor: pointer;
+    padding: 0.8rem;
+  
+    fill: white;
+    background-color: inherit;
+    border: none;
+    &:hover{  
+      background-color: rgba(255, 255, 255, 0.142);
+      border-radius: 50%;
+    }
+  }
+  &-shuffle{
+    min-width: 3.6rem;
+    height: 3.6rem;
+    stroke-width: 0;
+    cursor: pointer;
+    padding: 0.5rem;
+  
+    fill: white;
+    background-color: inherit;
+    border: none;
+    &:hover{  
+      background-color: rgba(255, 255, 255, 0.142);
+      border-radius: 50%;
+    }
+  }
+
+  &-micro{
+    min-width: 3.6rem;
+    height: 3.6rem;
+    stroke-width: 0;
+    cursor: pointer;
+    padding: 0.8rem;
+  
+    fill: white;
+    background-color: inherit;
+    border: none;
+    &:hover{  
+      background-color: rgba(255, 255, 255, 0.142);
+      border-radius: 50%;
+    }
+  }
+  &-volume{
+    min-width: 3.6rem;;
+    height: 3.6rem;
+    stroke-width: 0;
+    cursor: pointer;
+    padding: 0.8rem;
+  
+    fill: white;
+    background-color: inherit;
+    border: none;
+    &:hover{  
+      background-color: rgba(255, 255, 255, 0.142);
+      border-radius: 50%;
+    }
+  }
+  &-music-playlist{
+    min-width: 3.6rem;
+    height: 3.6rem;
+    stroke-width: 0;
+    cursor: pointer;
+    padding: 0.8rem;
+  
+    fill: white;
+    background-color: inherit;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.096);
+    &:hover{  
+      background-color: rgba(255, 255, 255, 0.213);
+    }
   }
 }

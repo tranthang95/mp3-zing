@@ -1,29 +1,14 @@
 .header {
-  // grid-column: center-start / center-end;
-  // grid-row: 1 / 2;
-
   background-color: #160F23;
-  // min-width: 66rem;
   height: 7rem;
 
   position: sticky;
   top: 0;
-
-  opacity: 0.8;
-
+  opacity: 1;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 
 
 
-// .visually-hidden {
-//    clip: rect(0 0 0 0);
-//   clip-path: inset(50%);
-//   height: 1px;
-//    overflow: hidden;
-//    position: absolute;
-//    white-space: nowrap;
-//   width: 1px;
-// }
