@@ -1,53 +1,83 @@
+@import "./mixins";
 .sidebar {
-  // grid-column: sidebar-start / sidebar-end;
-  // grid-row:  1 /-1;
-  
   background-color: #312644;
-
   position: sticky;
   top: 0;
-  height: 100vh;
-  min-width: 24rem;
+  height: calc(100vh - 9rem);
+  max-width: 24rem;
   display: flex;
   flex-direction: column;
   line-height: 3rem;
-
-
   justify-content: flex-start;
+  @include respond(tab-land) {  //width <1200 1rem=9px
+    height: 95vh;
+  }
+ 
 
+  @include respond(tab-port) {  //width < 900
+    width: 10rem;
+    align-items: center;
+    gap: 1rem;
+  }
+  @include respond(phone) {
+    width: 8rem;
+  }
+  // @include respond(phone) { //width <600
+  //   font-size: 50%;
+  // }
   
   &__logo-zing {
     width: 10rem;
     height: 5rem;
     margin: 2rem 3rem 2rem 3rem;
     align-self: baseline  ;
+    @include respond(tab-port) {  //width < 900
+      display: none;
+    }
+  }
+
+  &__logo-zing-mini {
+    width: 5em;
+    height: 5rem;
+    margin: 1rem;
+    background-color: inherit;
+    border: none;
+    display: none;
+    cursor: pointer;
+    @include respond(tab-port) {  //width < 900
+      display: block;      
+    }
   }
 
   &__btn {
-    
-    // stroke: white;
-    font-size: 1.4rem;
-    font-weight: 700;
     display: flex;
     justify-content: flex-start;
     align-items: center ;
     padding: .8rem 2rem .8rem 3rem;
     cursor: pointer;
-    
+    &:link{
+      background-color: #3A3344;
+    }
+    &:visited {
+      background-color: #3A3344;
+    }
+    @include respond(tab-port) {  //width < 900
+      padding: 2rem 3rem 2rem 3rem;     
+    }
     
   }
   
   &__btn-explore{
     fill: white;
-    
     border: none;
     height: 2rem;
     width: 2rem;
     margin-right: 1rem;
-   
     stroke-width: 0;
-    
-   
+    @include respond(tab-port) {  //width < 900
+      height: 2.5rem;
+      width: 2.5rem;    
+    }
   }
 
   &__btn-user{
@@ -63,10 +93,25 @@
   }
 }
 
+.sidebar-btn{
+  @include respond(tab-port) {  //width < 900
+    display: flex;
+    flex-direction: column;
+  }
+}
+.sidebar-title{
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  @include respond(tab-port) {  //width < 900
+    display: none;
+  }
+}
 span {
   color: white;
   font-size: 1.3rem;
   font-weight: 700;
+  
 }
 a {
   text-decoration: none;

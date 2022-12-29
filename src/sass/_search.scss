@@ -18,6 +18,7 @@
   justify-content: flex-start;
   align-items: center;
 
+
   
   &__input {
     padding-left: 4rem;
@@ -43,11 +44,14 @@
     &::placeholder {
       color: #f8f9fa
     }
+
+    @include respond(phone){
+      width: 30vw;
+    }
   }
 
   &__button {
     z-index: 100;
   }
-
+  
 }
-

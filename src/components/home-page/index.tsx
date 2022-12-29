@@ -9,7 +9,7 @@ const Home:React.FC = () => {
   return (
     <div className="maintcontent">
 
-       <div className="slider">
+      <div className="slider">
         <div className="slider__button slider__button-preview">
           <button className='btn'>
             <IconCheLeft />

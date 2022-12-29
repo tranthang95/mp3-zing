@@ -37,6 +37,7 @@ const Song: React.FC = () => {
               <span className="song__infor-author">Amy</span>
             </div>
           </div>
+          
           <div className="song__media-mid">
             <div className="song__album">Song album </div>
           </div>
