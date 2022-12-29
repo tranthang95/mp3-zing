@@ -517,14 +517,14 @@ a {
   padding-bottom: 1.6rem; }
 
 .button-jump-next {
-  min-width: 3.6rem;
-  height: 3.6rem;
   stroke-width: 0;
   cursor: pointer;
-  padding: 0.5rem;
   fill: white;
   background-color: inherit;
-  border: none; }
+  border: none;
+  min-width: 3.6rem;
+  height: 3.6rem;
+  padding: 0.5rem; }
   .button-jump-next:hover {
     background-color: rgba(255, 255, 255, 0.142);
     border-radius: 50%; }
@@ -532,9 +532,9 @@ a {
 .button-jump-start {
   min-width: 3.6rem;
   height: 3.6rem;
+  padding: 0.5rem;
   stroke-width: 0;
   cursor: pointer;
-  padding: 0.5rem;
   fill: white;
   background-color: inherit;
   border: none; }
@@ -556,9 +556,9 @@ a {
 .button-loop {
   min-width: 3.6rem;
   height: 3.6rem;
+  padding: 0.8rem;
   stroke-width: 0;
   cursor: pointer;
-  padding: 0.8rem;
   fill: white;
   background-color: inherit;
   border: none; }
@@ -569,9 +569,9 @@ a {
 .button-shuffle {
   min-width: 3.6rem;
   height: 3.6rem;
+  padding: 0.5rem;
   stroke-width: 0;
   cursor: pointer;
-  padding: 0.5rem;
   fill: white;
   background-color: inherit;
   border: none; }
@@ -582,9 +582,9 @@ a {
 .button-micro {
   min-width: 3.6rem;
   height: 3.6rem;
+  padding: 0.8rem;
   stroke-width: 0;
   cursor: pointer;
-  padding: 0.8rem;
   fill: white;
   background-color: inherit;
   border: none; }
@@ -598,9 +598,9 @@ a {
 .button-volume {
   min-width: 3.6rem;
   height: 3.6rem;
+  padding: 0.8rem;
   stroke-width: 0;
   cursor: pointer;
-  padding: 0.8rem;
   fill: white;
   background-color: inherit;
   border: none; }
@@ -611,9 +611,9 @@ a {
 .button-music-playlist {
   min-width: 3.6rem;
   height: 3.6rem;
+  padding: 0.8rem;
   stroke-width: 0;
   cursor: pointer;
-  padding: 0.8rem;
   fill: white;
   background-color: inherit;
   border: none;

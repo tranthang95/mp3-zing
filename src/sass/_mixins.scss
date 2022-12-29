@@ -13,3 +13,11 @@
     @media (min-width: 112.5em) {@content}; //1800px
   }
 }
+
+@mixin btn {
+  stroke-width: 0;
+  cursor: pointer;
+  fill: white;
+  background-color: inherit;
+  border: none;
+}

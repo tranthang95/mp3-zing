@@ -1,3 +1,5 @@
+@import "./mixins";
+
 .btn {
   background-color: #31234600;
   stroke: #9D9AA2;
@@ -62,133 +64,91 @@
   // }
 }
 
-.button {
-  
-  &-jump-next{
-    min-width: 3.6rem;
-    height: 3.6rem;
-    stroke-width: 0;
-    cursor: pointer;
-    padding: 0.5rem;
-  
-    fill: white;
-    background-color: inherit;
-    border: none;
-    &:hover{  
-      background-color: rgba(255, 255, 255, 0.142);
-      border-radius: 50%;
-    }
-  }
-  &-jump-start{
-    min-width: 3.6rem;
-    height: 3.6rem;
-    stroke-width: 0;
-    cursor: pointer;
-    padding: 0.5rem;
-  
-    fill: white;
-    background-color: inherit;
-    border: none;
-    &:hover{  
-      background-color: rgba(255, 255, 255, 0.142);
-      border-radius: 50%;
-    }
-  }
 
-  &-pause{
-    min-width: 3.6rem;
-    height: 4rem;
-    stroke-width: 0;
-    cursor: pointer;
-  
-    fill: white;
-    background-color: inherit;
-    border: none;
-    &:hover{  
-      fill: $color-button-active;
-    }
+.button-jump-next{
+  @include btn;
+  min-width: 3.6rem;
+  height: 3.6rem;
+  padding: 0.5rem;
+  &:hover{  
+    background-color: rgba(255, 255, 255, 0.142);
+    border-radius: 50%;
   }
-  &-loop{
-    min-width: 3.6rem;;
-    height: 3.6rem;
-    stroke-width: 0;
-    cursor: pointer;
-    padding: 0.8rem;
-  
-    fill: white;
-    background-color: inherit;
-    border: none;
-    &:hover{  
-      background-color: rgba(255, 255, 255, 0.142);
-      border-radius: 50%;
-    }
+}
+.button-jump-start{
+  min-width: 3.6rem;
+  height: 3.6rem;
+  padding: 0.5rem;
+  @include btn;
+  &:hover{  
+    background-color: rgba(255, 255, 255, 0.142);
+    border-radius: 50%;
   }
-  &-shuffle{
-    min-width: 3.6rem;
-    height: 3.6rem;
-    stroke-width: 0;
-    cursor: pointer;
-    padding: 0.5rem;
-  
-    fill: white;
-    background-color: inherit;
-    border: none;
-    &:hover{  
-      background-color: rgba(255, 255, 255, 0.142);
-      border-radius: 50%;
-    }
-  }
+}
 
-  &-micro{
-    min-width: 3.6rem;
-    height: 3.6rem;
-    stroke-width: 0;
-    cursor: pointer;
-    padding: 0.8rem;
-  
-    fill: white;
-    background-color: inherit;
-    border: none;
-    &:hover{  
-      background-color: rgba(255, 255, 255, 0.142);
-      border-radius: 50%;
-    }
-    @include respond(phone) {
-      display: none;
-    }
+.button-pause{
+  min-width: 3.6rem;
+  height: 4rem;
+  @include btn;
+  &:hover{  
+    fill: $color-button-active;
   }
-  &-volume{
-    min-width: 3.6rem;;
-    height: 3.6rem;
-    stroke-width: 0;
-    cursor: pointer;
-    padding: 0.8rem;
-  
-    fill: white;
-    background-color: inherit;
-    border: none;
-    &:hover{  
-      background-color: rgba(255, 255, 255, 0.142);
-      border-radius: 50%;
-    }
+}
+.button-loop{
+  min-width: 3.6rem;;
+  height: 3.6rem;
+  padding: 0.8rem;
+  @include btn;
+  &:hover{  
+    background-color: rgba(255, 255, 255, 0.142);
+    border-radius: 50%;
   }
-  &-music-playlist{
-    min-width: 3.6rem;
-    height: 3.6rem;
-    stroke-width: 0;
-    cursor: pointer;
-    padding: 0.8rem;
-  
-    fill: white;
-    background-color: inherit;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.096);
-    &:hover{  
-      background-color: rgba(255, 255, 255, 0.213);
-    }
-    @include respond(tab-port) {  //width < 900 1rem=8px
-      display: none;
-    }
+}
+.button-shuffle{
+  min-width: 3.6rem;
+  height: 3.6rem;
+  padding: 0.5rem;
+  @include btn;
+  &:hover{  
+    background-color: rgba(255, 255, 255, 0.142);
+    border-radius: 50%;
+  }
+}
+
+.button-micro{
+  min-width: 3.6rem;
+  height: 3.6rem;
+  padding: 0.8rem;
+  @include btn;
+  &:hover{  
+    background-color: rgba(255, 255, 255, 0.142);
+    border-radius: 50%;
+  }
+  @include respond(phone) {
+    display: none;
+  }
+}
+.button-volume{
+  min-width: 3.6rem;;
+  height: 3.6rem;
+  padding: 0.8rem;
+  @include btn;
+  &:hover{  
+    background-color: rgba(255, 255, 255, 0.142);
+    border-radius: 50%;
+  }
+}
+.button-music-playlist{
+  min-width: 3.6rem;
+  height: 3.6rem;
+  padding: 0.8rem;
+  @include btn;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.096);
+  &:hover{  
+    background-color: rgba(255, 255, 255, 0.213);
+  }
+  @include respond(tab-port) {  //width < 900 1rem=8px
+    display: none;
   }
 }
