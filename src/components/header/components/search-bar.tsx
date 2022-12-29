@@ -11,10 +11,10 @@ const Search:React.FC = () => {
       <label htmlFor="header-search">
           <span className="visually-hidden"></span>
       </label>
-      <div>
+      
         <IconBack />
         <IconForward />
-      </div>
+      
 
       <button className='btn search__button' type="submit">
         <IconMagnifying />

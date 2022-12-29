@@ -1,3 +1,4 @@
+@import "./mixins";
 //Color
 $color-primary: #170F23;
 $color-primary-light: #2E2739;
@@ -31,21 +32,26 @@ $bp-small: 37em;  //             600px
 }
 
 .container {
-  // margin: 1rem;
-
   display: flex;
   background-color: #170F23;
   position: relative;
   color: white;
-  
-  // grid-template-rows: 20vh 80vh 10vh 1fr;
-  // // grid-template-columns: [sidebar-start] minxax(min-content, 8rem) [sidebar-end ful-start] 1fr [center-start] repeat(8, [col-start] minxax(min-content, 14rem) [col-end]) [center-end] 1fr [ful-end];
-  // grid-template-columns: [sidebar-start] minmax(15vw, 24rem) [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 
 }
 
 .container__main{
-  width: 100vw;
+  width: 100%;
   padding: 0 6rem 0 6rem;
+  overflow: hidden;
+
+  @include respond(tab-land) {  //width <1200
+    padding: 0 4rem;
+  }
+  @include respond(tab-port) {  //width < 900
+    padding: 0 2rem;
+  }
+  @include respond(phone) { //width <600
+    padding: 0 1rem;
+  }
 
 }
