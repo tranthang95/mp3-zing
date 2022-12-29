@@ -20,8 +20,7 @@
 
 .container__main {
   width: 100%;
-  padding: 0 6rem 0 6rem;
-  overflow: hidden; }
+  padding: 0 6rem 0 6rem; }
   @media (max-width: 75em) {
     .container__main {
       padding: 0 4rem; } }
@@ -260,8 +259,7 @@ a {
       margin: auto; } }
 
 .slider {
-  width: 100%;
-  text-align: center;
+  width: 78vw;
   position: relative;
   display: flex; }
   .slider__button {

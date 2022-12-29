@@ -42,7 +42,7 @@ $bp-small: 37em;  //             600px
 .container__main{
   width: 100%;
   padding: 0 6rem 0 6rem;
-  overflow: hidden;
+  // overflow: hidden;
 
   @include respond(tab-land) {  //width <1200
     padding: 0 4rem;
